@@ -26,8 +26,8 @@ function Content(props) {
     return (
     <div className='App'>
       <br></br>
-      <textarea onInput={() => document.getElementById('preview').innerHTML = (marked($("#content").val()))} id='content' name='content' className='Textarea'>
-      {egArr[0]+"\n\n"+egArr[1]+"\n"+egArr[2]+"\n"+egArr[3]+"\n"+egArr[4]+"\n\n"+egArr[5]+"\n\n"+egArr[6]+"\n\n"+egArr[7]+"\n\n"+egArr[8]+"\n\n"+egArr[9]+"\n\n"+egArr[10]+"\n\n"+egArr[11]+"\n\n"+egArr[12]+"\r"}
+      <textarea onInput={() => document.getElementById('preview').innerHTML = (marked($("#editor").val()))} id='editor' name='content' className='Textarea'>
+      {egArr[0]+"\n\n"+egArr[1]+"\n\n"+egArr[2]+"\n"+egArr[3]+"\n"+egArr[4]+"\n\n"+egArr[5]+"\n\n"+egArr[6]+"\n\n"+egArr[7]+"\n\n"+egArr[8]+"\n\n"+egArr[9]+"\n\n"+egArr[10]+"\n\n"+egArr[11]+"\n\n"+egArr[12]+"\r"}
       </textarea>
       <br></br>
     </div>

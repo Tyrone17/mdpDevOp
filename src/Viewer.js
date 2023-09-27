@@ -18,7 +18,7 @@ export class StatefulComp extends React.Component {
     super(props);
     // Only change code below this line
     const htmlAdd = marked.parse('# Marked in Node.js\n\nRendered by **marked**.');
-    var html = marked.parse(document.getElementById('content').innerHTML);
+    var html = marked.parse(document.getElementById('editor').innerHTML);
     this.state ={
       text: html,
       altTetx: htmlAdd
@@ -37,8 +37,8 @@ export class StatefulComp extends React.Component {
 export function RealTimeView(){
   var objectProto = new StatefulComp();
   var tD = objectProto.state.text;
-  var inputField = document.getElementById('content').addEventListener("input", ()=>{
-    marked.parse($("#content").val())
+  var inputField = document.getElementById('editor').addEventListener("input", ()=>{
+    marked.parse($("#editor").val())
   })
   var [data, setState] = useState(inputField);
   return(
