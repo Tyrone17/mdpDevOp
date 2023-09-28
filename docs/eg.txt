@@ -1,0 +1,19 @@
+# Welcome to my React Markdown Previewer! 
+
+## This is a sub-heading... 
+
+### And here's some other cool stuff:  
+
+You can also make text **bold**... whoa! Or _italic_. 
+
+Or... wait for it... **_both!_** And feel free to go crazy ~~crossing stuff out~~.
+
+There's also [links](https://techserv-bit.co.za), and 
+
+And of course there are lists. 
+- Some are bulleted. 
+  - With different indentation levels. 
+    - That look like this.
+
+1. And there are numbered lists too. 
+1. Use just 1s if you want! 
